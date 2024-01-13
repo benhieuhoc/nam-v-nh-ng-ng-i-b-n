@@ -45,7 +45,7 @@ namespace QLShopMoHinh
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!");
                 else
                 {
-                    FrmMain f = new FrmMain();
+                    FrmMain f = new FrmMain(dbLogin);
                     this.Hide();
                     f.ShowDialog();
                 }

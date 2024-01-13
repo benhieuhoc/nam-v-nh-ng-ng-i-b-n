@@ -75,7 +75,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvBill.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvBill.Enabled = false;
             this.DgvBill.Location = new System.Drawing.Point(103, 98);
             this.DgvBill.Name = "DgvBill";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

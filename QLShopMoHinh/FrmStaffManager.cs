@@ -151,7 +151,7 @@ namespace QLShopMoHinh
                     throw new Exception("Vui lòng nhập đầy đủ thông tin!!");
                 Staff dbDelete = context.Staffs.FirstOrDefault(p => p.ID == txtID.Text);
                 if (dbDelete == null)
-                    throw new Exception("Không tìm thấy sản phẩm cần xóa!!!");
+                    throw new Exception("Không tìm thấy nhân viên cần xóa!!!");
                 else
                 {
                     context.Staffs.Remove(dbDelete);

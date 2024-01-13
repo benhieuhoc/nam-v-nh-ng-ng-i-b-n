@@ -105,7 +105,7 @@ namespace QLShopMoHinh
                     throw new Exception("Vui lòng nhập đầy đủ thông tin!!");
                 Client dbUpdate = context.Clients.FirstOrDefault(p => p.PhoneNumber == txtPhoneNumber.Text);
                 if (dbUpdate == null)
-                    throw new Exception("Không tìm thấy sản phẩm cần sửa!!!");
+                    throw new Exception("Không tìm thấy khách hàng cần sửa!!!");
                 else
                 {
                     dbUpdate.FullName = txtFullName.Text.ToString();
@@ -142,7 +142,7 @@ namespace QLShopMoHinh
                     throw new Exception("Vui lòng nhập đầy đủ thông tin!!");
                 Client dbDelete = context.Clients.FirstOrDefault(p => p.PhoneNumber == txtPhoneNumber.Text);
                 if (dbDelete == null)
-                    throw new Exception("Không tìm thấy sản phẩm cần xóa!!!");
+                    throw new Exception("Không tìm thấy khách hàng cần xóa!!!");
                 else
                 {
                     context.Clients.Remove(dbDelete);

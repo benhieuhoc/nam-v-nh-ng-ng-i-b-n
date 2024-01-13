@@ -13,9 +13,26 @@ namespace QLShopMoHinh
 {
     public partial class FrmMain : DevExpress.XtraEditors.XtraForm
     {
-        public FrmMain()
+        private Staff loginStaff;
+
+        public Staff LoginStaff
+        {
+            get { return loginStaff; }
+            set { loginStaff = value; ChanceFrmbyStaff(loginStaff.Type); }
+        }
+        public FrmMain(Staff acc)
         {
             InitializeComponent();
+            this.LoginStaff = acc;
+        }
+
+        private void ChanceFrmbyStaff(int Type)
+        {
+
+            btnStaff.Enabled = Type == 1;
+            btnClient.Enabled = Type == 1;
+            btnInventory.Enabled = Type == 1;
+            btnBill.Enabled = Type == 1;
         }
 
         private void Clear_panel()
