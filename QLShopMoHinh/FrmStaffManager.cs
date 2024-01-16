@@ -99,6 +99,8 @@ namespace QLShopMoHinh
                 txtFullName.Text = row.Cells[2].Value.ToString();
             if (row.Cells[3].Value != null)
                 txtPassword.Text = row.Cells[3].Value.ToString();
+            if (row.Cells[4].Value != null)
+                cmbType.Text = row.Cells[4].Value.ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -204,6 +206,16 @@ namespace QLShopMoHinh
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

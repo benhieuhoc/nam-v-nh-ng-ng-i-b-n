@@ -19,7 +19,6 @@ namespace QLShopMoHinh
             InitializeComponent();
         }
 
-        //Đưa tên các phân loại hàng hóa combobox
         private void FillClassCombobox(List<Class> ListClasses)
         {
             this.cmbClass.DataSource = ListClasses;
@@ -27,8 +26,6 @@ namespace QLShopMoHinh
             this.cmbClass.ValueMember = "ID";
         }
 
-
-        //Đưa database vào Datagridview
         private void BindGrid(List<Item> ListItems)
         {
             DgvInventory.Rows.Clear();
@@ -100,8 +97,6 @@ namespace QLShopMoHinh
             }
         }
 
-        //CellClick là event để mỗi lúc nhấn vào bất kì ô nào của mỗi hàng thì sẽ chọn cả hàng để thực hiện
-        //Hàm dưới này là để mỗi lúc nhấn vào thuộc tính bất kì của mỗi item thì nó sẽ đưa thông tin của nhân viên ra lại đúng text để dễ chỉnh sửa hoặc xóa
         private void DgvInventory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1)
@@ -207,6 +202,11 @@ namespace QLShopMoHinh
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

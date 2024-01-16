@@ -13,6 +13,7 @@ namespace QLShopMoHinh
     public partial class FrmTrade : Form
     {
         ShopMoHinhDB context = new ShopMoHinhDB();
+        private int i = 0;
 
         public FrmTrade()
         {
@@ -45,7 +46,7 @@ namespace QLShopMoHinh
                         MessageBox.Show("Vui lòng nhập số điện thoại của khách hàng để tìm");
                     else
                     {
-                        DialogResult dr = MessageBox.Show("Khách hàng không tồn tại! Bạn có muốn thêm khách hàng?", "YES/NO", MessageBoxButtons.YesNo);
+                        DialogResult dr = MessageBox.Show("Khách hàng này không tồn tại! Bạn có muốn thêm khách hàng?", "YES/NO", MessageBoxButtons.YesNo);
                         if (dr == DialogResult.Yes)
                         {
                             FrmAddClient f = new FrmAddClient();
@@ -71,12 +72,11 @@ namespace QLShopMoHinh
             }
         }
 
-        private void FillClassCombobox(List<Class> ListClassses)
+        private void FillClassCombobox(List<Class> ListClasses)
         {
-            cmbClass.DataSource = context.Classes.Select(x => new { x.Name, x.ID }).ToList(); ;
-            cmbClass.DisplayMember = "Name";
-            cmbClass.ValueMember = "ID";
-
+            this.cmbClass.DataSource = ListClasses;
+            this.cmbClass.ValueMember = "ID";
+            this.cmbClass.DisplayMember = "Name";
         }
 
         private void FillNameItemCombobox()
@@ -85,18 +85,6 @@ namespace QLShopMoHinh
             cmbNameOfItem.DataSource = context.Items.Where(x => x.ClassID == id).ToList();
             cmbNameOfItem.DisplayMember = "ItemName";
             cmbNameOfItem.ValueMember = "ID";
-        }
-
-        private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                FillNameItemCombobox();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
         private int GetSelectedRow(string IDItem)
@@ -244,9 +232,23 @@ namespace QLShopMoHinh
 
         private void FrmTrade_Load(object sender, EventArgs e)
         {
-            List<Class> Listclasses = context.Classes.ToList();
-            FillClassCombobox(Listclasses);
+            List<Class> ListClasses = context.Classes.ToList();
+            FillClassCombobox(ListClasses);
             FillNameItemCombobox();
+        }
+
+        private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                i++;
+                if(i > 2)
+                    FillNameItemCombobox();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

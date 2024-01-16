@@ -73,6 +73,26 @@ namespace QLShopMoHinh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_delete_45_trash {
+            get {
+                object obj = ResourceManager.GetObject("icon_delete_45_trash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_save_45 {
+            get {
+                object obj = ResourceManager.GetObject("icon_save_45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_add_45px {
             get {
                 object obj = ResourceManager.GetObject("icons8_add_45px", resourceCulture);

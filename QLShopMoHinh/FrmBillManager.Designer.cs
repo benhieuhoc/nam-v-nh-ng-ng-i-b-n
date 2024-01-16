@@ -43,11 +43,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(326, 31);
+            this.label1.Location = new System.Drawing.Point(406, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 33);
+            this.label1.Size = new System.Drawing.Size(339, 40);
             this.label1.TabIndex = 21;
             this.label1.Text = "QUẢN LÝ HÓA ĐƠN";
             // 
@@ -75,7 +75,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvBill.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvBill.Location = new System.Drawing.Point(103, 98);
+            this.DgvBill.Location = new System.Drawing.Point(208, 175);
             this.DgvBill.Name = "DgvBill";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -124,7 +124,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 505);
+            this.ClientSize = new System.Drawing.Size(1152, 687);
             this.Controls.Add(this.DgvBill);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

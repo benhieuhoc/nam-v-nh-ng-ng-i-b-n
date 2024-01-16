@@ -47,13 +47,16 @@
             this.txtUserFullname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbClass = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnFindClient = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.nudSelectItem = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbNameOfItem = new System.Windows.Forms.ComboBox();
-            this.cmbClass = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dgvListItemToTransaction = new System.Windows.Forms.DataGridView();
@@ -64,9 +67,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnFindClient = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,9 +79,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(670, -2);
+            this.panel1.Location = new System.Drawing.Point(872, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 507);
+            this.panel1.Size = new System.Drawing.Size(282, 687);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -103,7 +103,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(0, 41);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(282, 463);
+            this.groupBox1.Size = new System.Drawing.Size(282, 646);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa Đơn:";
@@ -114,9 +114,9 @@
             this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancle.ForeColor = System.Drawing.Color.White;
-            this.btnCancle.Location = new System.Drawing.Point(137, 389);
+            this.btnCancle.Location = new System.Drawing.Point(140, 571);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(146, 75);
+            this.btnCancle.Size = new System.Drawing.Size(141, 75);
             this.btnCancle.TabIndex = 14;
             this.btnCancle.Text = "Hủy";
             this.btnCancle.UseVisualStyleBackColor = false;
@@ -128,9 +128,9 @@
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.White;
-            this.btnPay.Location = new System.Drawing.Point(0, 389);
+            this.btnPay.Location = new System.Drawing.Point(0, 571);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(146, 75);
+            this.btnPay.Size = new System.Drawing.Size(141, 75);
             this.btnPay.TabIndex = 13;
             this.btnPay.Text = "Thanh toán";
             this.btnPay.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@
             // btnToltalmoney
             // 
             this.btnToltalmoney.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToltalmoney.Location = new System.Drawing.Point(99, 280);
+            this.btnToltalmoney.Location = new System.Drawing.Point(100, 444);
             this.btnToltalmoney.Name = "btnToltalmoney";
             this.btnToltalmoney.Size = new System.Drawing.Size(89, 26);
             this.btnToltalmoney.TabIndex = 12;
@@ -149,7 +149,7 @@
             // 
             // txtTotalmoney
             // 
-            this.txtTotalmoney.Location = new System.Drawing.Point(97, 334);
+            this.txtTotalmoney.Location = new System.Drawing.Point(98, 498);
             this.txtTotalmoney.Name = "txtTotalmoney";
             this.txtTotalmoney.ReadOnly = true;
             this.txtTotalmoney.Size = new System.Drawing.Size(160, 22);
@@ -160,7 +160,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 337);
+            this.label6.Location = new System.Drawing.Point(10, 501);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 19);
             this.label6.TabIndex = 10;
@@ -168,7 +168,7 @@
             // 
             // txtDay
             // 
-            this.txtDay.Location = new System.Drawing.Point(88, 224);
+            this.txtDay.Location = new System.Drawing.Point(88, 369);
             this.txtDay.Name = "txtDay";
             this.txtDay.ReadOnly = true;
             this.txtDay.Size = new System.Drawing.Size(160, 22);
@@ -178,7 +178,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 227);
+            this.label5.Location = new System.Drawing.Point(7, 372);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 19);
             this.label5.TabIndex = 8;
@@ -186,7 +186,7 @@
             // 
             // txtDiscount
             // 
-            this.txtDiscount.Location = new System.Drawing.Point(88, 177);
+            this.txtDiscount.Location = new System.Drawing.Point(88, 297);
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.ReadOnly = true;
             this.txtDiscount.Size = new System.Drawing.Size(160, 22);
@@ -196,7 +196,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 180);
+            this.label4.Location = new System.Drawing.Point(7, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 6;
@@ -204,7 +204,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(88, 134);
+            this.txtAddress.Location = new System.Drawing.Point(88, 214);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(160, 22);
@@ -214,7 +214,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 137);
+            this.label3.Location = new System.Drawing.Point(7, 217);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 4;
@@ -222,7 +222,7 @@
             // 
             // txtSelectPhonenumber
             // 
-            this.txtSelectPhonenumber.Location = new System.Drawing.Point(88, 77);
+            this.txtSelectPhonenumber.Location = new System.Drawing.Point(88, 134);
             this.txtSelectPhonenumber.Name = "txtSelectPhonenumber";
             this.txtSelectPhonenumber.ReadOnly = true;
             this.txtSelectPhonenumber.Size = new System.Drawing.Size(160, 22);
@@ -232,7 +232,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 80);
+            this.label2.Location = new System.Drawing.Point(7, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 19);
             this.label2.TabIndex = 2;
@@ -240,7 +240,7 @@
             // 
             // txtUserFullname
             // 
-            this.txtUserFullname.Location = new System.Drawing.Point(88, 28);
+            this.txtUserFullname.Location = new System.Drawing.Point(88, 53);
             this.txtUserFullname.Name = "txtUserFullname";
             this.txtUserFullname.ReadOnly = true;
             this.txtUserFullname.Size = new System.Drawing.Size(160, 22);
@@ -250,7 +250,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 31);
+            this.label1.Location = new System.Drawing.Point(7, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 19);
             this.label1.TabIndex = 0;
@@ -259,19 +259,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panel2.Controls.Add(this.cmbClass);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnAdd);
             this.panel2.Controls.Add(this.nudSelectItem);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.cmbNameOfItem);
-            this.panel2.Controls.Add(this.cmbClass);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(674, 127);
+            this.panel2.Size = new System.Drawing.Size(867, 127);
             this.panel2.TabIndex = 1;
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.FormattingEnabled = true;
+            this.cmbClass.Location = new System.Drawing.Point(383, 79);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Size = new System.Drawing.Size(145, 24);
+            this.cmbClass.TabIndex = 20;
+            this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -302,9 +311,51 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "SĐT:";
             // 
+            // btnFindClient
+            // 
+            this.btnFindClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnFindClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFindClient.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnFindClient.Image = global::QLShopMoHinh.Properties.Resources.icons8_search_32px;
+            this.btnFindClient.Location = new System.Drawing.Point(229, 58);
+            this.btnFindClient.Name = "btnFindClient";
+            this.btnFindClient.Size = new System.Drawing.Size(45, 40);
+            this.btnFindClient.TabIndex = 15;
+            this.btnFindClient.UseVisualStyleBackColor = false;
+            this.btnFindClient.Click += new System.EventHandler(this.btnFindClient_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnDelete.Image = global::QLShopMoHinh.Properties.Resources.icons8_delete_45px_1;
+            this.btnDelete.Location = new System.Drawing.Point(800, 63);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(54, 53);
+            this.btnDelete.TabIndex = 25;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnAdd.Image = global::QLShopMoHinh.Properties.Resources.icons8_add_45px;
+            this.btnAdd.Location = new System.Drawing.Point(795, 8);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(63, 53);
+            this.btnAdd.TabIndex = 24;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // nudSelectItem
             // 
-            this.nudSelectItem.Location = new System.Drawing.Point(583, 6);
+            this.nudSelectItem.Location = new System.Drawing.Point(560, 22);
             this.nudSelectItem.Name = "nudSelectItem";
             this.nudSelectItem.Size = new System.Drawing.Size(73, 22);
             this.nudSelectItem.TabIndex = 23;
@@ -314,7 +365,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(502, 9);
+            this.label10.Location = new System.Drawing.Point(479, 25);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 19);
             this.label10.TabIndex = 22;
@@ -323,26 +374,17 @@
             // cmbNameOfItem
             // 
             this.cmbNameOfItem.FormattingEnabled = true;
-            this.cmbNameOfItem.Location = new System.Drawing.Point(380, 75);
+            this.cmbNameOfItem.Location = new System.Drawing.Point(640, 79);
             this.cmbNameOfItem.Name = "cmbNameOfItem";
             this.cmbNameOfItem.Size = new System.Drawing.Size(137, 24);
             this.cmbNameOfItem.TabIndex = 21;
-            // 
-            // cmbClass
-            // 
-            this.cmbClass.FormattingEnabled = true;
-            this.cmbClass.Location = new System.Drawing.Point(380, 37);
-            this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Size = new System.Drawing.Size(137, 24);
-            this.cmbClass.TabIndex = 20;
-            this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(274, 80);
+            this.label9.Location = new System.Drawing.Point(534, 84);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 19);
             this.label9.TabIndex = 19;
@@ -353,7 +395,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(274, 43);
+            this.label8.Location = new System.Drawing.Point(273, 85);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 19);
             this.label8.TabIndex = 17;
@@ -369,11 +411,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvListItemToTransaction.Location = new System.Drawing.Point(-7, 121);
+            this.dgvListItemToTransaction.Location = new System.Drawing.Point(-1, 131);
             this.dgvListItemToTransaction.Name = "dgvListItemToTransaction";
             this.dgvListItemToTransaction.RowHeadersWidth = 51;
             this.dgvListItemToTransaction.RowTemplate.Height = 24;
-            this.dgvListItemToTransaction.Size = new System.Drawing.Size(680, 384);
+            this.dgvListItemToTransaction.Size = new System.Drawing.Size(867, 554);
             this.dgvListItemToTransaction.TabIndex = 2;
             // 
             // Column1
@@ -420,56 +462,16 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnFindClient
-            // 
-            this.btnFindClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnFindClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFindClient.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFindClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnFindClient.Image = global::QLShopMoHinh.Properties.Resources.icons8_search_32px;
-            this.btnFindClient.Location = new System.Drawing.Point(229, 58);
-            this.btnFindClient.Name = "btnFindClient";
-            this.btnFindClient.Size = new System.Drawing.Size(45, 40);
-            this.btnFindClient.TabIndex = 15;
-            this.btnFindClient.UseVisualStyleBackColor = false;
-            this.btnFindClient.Click += new System.EventHandler(this.btnFindClient_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnDelete.Image = global::QLShopMoHinh.Properties.Resources.icons8_delete_45px_1;
-            this.btnDelete.Location = new System.Drawing.Point(592, 52);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(54, 53);
-            this.btnDelete.TabIndex = 25;
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnAdd.Image = global::QLShopMoHinh.Properties.Resources.icons8_add_45px;
-            this.btnAdd.Location = new System.Drawing.Point(523, 52);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(63, 53);
-            this.btnAdd.TabIndex = 24;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmTrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(952, 505);
+            this.ClientSize = new System.Drawing.Size(1152, 687);
             this.Controls.Add(this.dgvListItemToTransaction);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -521,7 +523,6 @@
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbNameOfItem;
-        private System.Windows.Forms.ComboBox cmbClass;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnDelete;
@@ -530,5 +531,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox cmbClass;
     }
 }

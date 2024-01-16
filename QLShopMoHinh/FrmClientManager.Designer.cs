@@ -56,7 +56,7 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(608, 127);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(742, 210);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(160, 22);
             this.txtPhoneNumber.TabIndex = 47;
@@ -66,7 +66,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label4.Location = new System.Drawing.Point(541, 130);
+            this.label4.Location = new System.Drawing.Point(604, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 19);
             this.label4.TabIndex = 46;
@@ -74,7 +74,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(173, 314);
+            this.txtAddress.Location = new System.Drawing.Point(162, 437);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(160, 22);
             this.txtAddress.TabIndex = 45;
@@ -84,7 +84,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label3.Location = new System.Drawing.Point(35, 317);
+            this.label3.Location = new System.Drawing.Point(24, 440);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 44;
@@ -92,7 +92,7 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(173, 250);
+            this.txtFullName.Location = new System.Drawing.Point(162, 359);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(160, 22);
             this.txtFullName.TabIndex = 43;
@@ -102,7 +102,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label2.Location = new System.Drawing.Point(35, 253);
+            this.label2.Location = new System.Drawing.Point(24, 362);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 19);
             this.label2.TabIndex = 42;
@@ -111,11 +111,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(327, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 33);
+            this.label1.Size = new System.Drawing.Size(393, 38);
             this.label1.TabIndex = 38;
             this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
@@ -126,7 +126,7 @@
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.btnUpdate.Image = global::QLShopMoHinh.Properties.Resources.icons8_wrench_32px;
-            this.btnUpdate.Location = new System.Drawing.Point(352, 426);
+            this.btnUpdate.Location = new System.Drawing.Point(359, 597);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(63, 53);
             this.btnUpdate.TabIndex = 41;
@@ -140,7 +140,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.btnDelete.Image = global::QLShopMoHinh.Properties.Resources.icons8_delete_45px_1;
-            this.btnDelete.Location = new System.Drawing.Point(361, 330);
+            this.btnDelete.Location = new System.Drawing.Point(368, 437);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(54, 53);
             this.btnDelete.TabIndex = 40;
@@ -154,7 +154,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.btnAdd.Image = global::QLShopMoHinh.Properties.Resources.icons8_add_45px;
-            this.btnAdd.Location = new System.Drawing.Point(352, 234);
+            this.btnAdd.Location = new System.Drawing.Point(359, 288);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(63, 53);
             this.btnAdd.TabIndex = 39;
@@ -187,7 +187,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvClient.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvClient.Location = new System.Drawing.Point(449, 200);
+            this.DgvClient.Location = new System.Drawing.Point(445, 288);
             this.DgvClient.Name = "DgvClient";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -199,7 +199,7 @@
             this.DgvClient.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DgvClient.RowHeadersWidth = 51;
             this.DgvClient.RowTemplate.Height = 24;
-            this.DgvClient.Size = new System.Drawing.Size(491, 293);
+            this.DgvClient.Size = new System.Drawing.Size(678, 362);
             this.DgvClient.TabIndex = 48;
             this.DgvClient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClient_CellClick);
             // 
@@ -252,7 +252,7 @@
             this.btnFind.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.btnFind.Image = global::QLShopMoHinh.Properties.Resources.icons8_search_32px1;
-            this.btnFind.Location = new System.Drawing.Point(774, 113);
+            this.btnFind.Location = new System.Drawing.Point(939, 198);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(63, 49);
             this.btnFind.TabIndex = 49;
@@ -261,7 +261,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(173, 208);
+            this.txtID.Location = new System.Drawing.Point(162, 288);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(160, 22);
             this.txtID.TabIndex = 51;
@@ -271,7 +271,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label5.Location = new System.Drawing.Point(35, 211);
+            this.label5.Location = new System.Drawing.Point(24, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 19);
             this.label5.TabIndex = 50;
@@ -283,7 +283,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 505);
+            this.ClientSize = new System.Drawing.Size(1152, 687);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnFind);
